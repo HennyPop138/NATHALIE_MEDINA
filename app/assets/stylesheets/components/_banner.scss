@@ -1,0 +1,104 @@
+.banner-home {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
+  width: 100vw;
+  height: 80vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  h1 {
+    color: whitesmoke;
+    font-weight: bold;
+  }
+  .name {
+    font-weight: lighter;
+  }
+  p{
+    color: whitesmoke;
+  }
+}
+
+.text {
+  text-align: center;
+  margin-top: 20%;
+  margin-left: 60%;
+}
+
+/* EN SAVOIR PLUS */
+.savoir {
+  text-align: center;
+  text-transform: uppercase;
+  margin-top: 10px;
+  animation: 1.8s anim-lineUp ease-in-out infinite;
+  a {
+    text-decoration: none;
+    color: #aaa;
+  }
+  a:hover {
+    color: #aaa;
+  }
+}
+
+/* ANIMATION TEXTE */
+@keyframes anim-lineUp {
+  0% {
+    opacity: 0;
+    transform: translateY(0%);
+  }
+  10% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+    transform: translateY(0%);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(80%);
+  }
+}
+
+/* FLÈCHES */
+.arrow {
+  padding-top: 60px;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  display: flex;
+  justify-content: end;
+}
+
+.arrow .fleche {
+  display: block;
+  width: 20px;
+  height: 20px;
+  border-bottom: 3px solid #aaa;
+  border-right: 3px solid #aaa;
+  transform: rotate(45deg);
+  margin: -10px;
+  animation: animate 2s infinite;
+}
+
+.arrow .fleche:nth-child(2) {
+  animation-delay: -0.2s;
+}
+
+/* ANIMATION FLÈCHES */
+@keyframes animate {
+  0% {
+    opacity: 0;
+    transform: rotate(45deg) translate(-20px, -20px);
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    transform: rotate(45deg) translate(20px, 20px);
+  }
+}
+
+.lorem {
+  margin-top: 90px;
+}
