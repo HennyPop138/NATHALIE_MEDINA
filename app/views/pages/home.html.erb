@@ -1,5 +1,5 @@
-<!-- NAVBAR -->
-<nav class="menu">
+<!-- NAVBAR DESKTOP -->
+<nav class="navdesktop">
   <ul>
     <div class="home">
       <li><%= link_to "Home" %></li>
@@ -10,6 +10,20 @@
       <li><%= link_to "Me contacter" %></li>
     </div>
   </ul>
+</nav>
+
+<!-- NAVBAR MOBILE -->
+<nav class="navmobile">
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li><a href="/mes services">Mes services</a></li>
+      <li><a href="/à porpos">À propos</a></li>
+      <li><a href="/me contacter">Me contacter</a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- BANNER -->
