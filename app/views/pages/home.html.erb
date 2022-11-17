@@ -2,12 +2,12 @@
 <nav class="navdesktop">
   <ul>
     <div class="home">
-      <li><%= link_to "Home" %></li>
+      <li><a href="#home-anchor">Home</a></li>
     </div>
     <div class="liens">
-      <li><%= link_to "Mes services" %></li>
-      <li><%= link_to "À propos" %></li>
-      <li><%= link_to "Me contacter" %></li>
+      <li><a href="#cards-anchor">Mes services</a></li>
+      <li><a href="#-anchor">À propos</a></li>
+      <li><a href="#-anchor">Me contacter</a></li>
     </div>
   </ul>
 </nav>
@@ -19,15 +19,15 @@
     <div class="bar2"></div>
     <div class="bar3"></div>
     <ul class="mobile-menu">
-      <li><a href="/mes services">Mes services</a></li>
-      <li><a href="/à porpos">À propos</a></li>
-      <li><a href="/me contacter">Me contacter</a></li>
+      <li><a href="#cards-anchor">Mes services</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Me contacter</a></li>
     </ul>
   </div>
 </nav>
 
 <!-- BANNER -->
-<div class="banner-home">
+<div class="banner-home" id="home-anchor">
   <div class="text">
     <h1>S.A.N.M</h1>
     <div class="name">
@@ -50,9 +50,9 @@
 </a>
 
 <!-- CARDS -->
-<div class="container" id="cards-anchor">
+<div class="container">
   <div class="cards">
-    <div class="cool-card">
+    <div class="cool-card" id="cards-anchor">
       <div class="image" style="
                   background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
                   url('https://source.unsplash.com/random/?sailing,ship');">
