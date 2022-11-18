@@ -1,30 +1,61 @@
-// .banner-home {
-//   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
-//   width: 100vw;
-//   height: 80vh;
-//   background-position: center center;
-//   background-repeat: no-repeat;
-//   background-size: cover;
-//   display: flex;
-//   flex-direction: column;
-//   align-items: center;
-//   h1 {
-//     color: whitesmoke;
-//     font-weight: bold;
-//   }
-//   .name {
-//     font-weight: lighter;
-//   }
-//   p{
-//     color: whitesmoke;
-//   }
-//   .text {
-//     text-align: center;
-//     margin-top: 20%;
-//     margin-left: 60%;
-//   }
-// }
+/* BANNER DESKTOP */
+@media screen and (min-width: 600px) {
+  .banner-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
+    width: 100%;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: whitesmoke;
+      font-weight: bold;
+    }
+    .name {
+      font-weight: lighter;
+    }
+    p{
+      color: whitesmoke;
+    }
+    .text {
+      text-align: center;
+      margin-top: 15%;
+      margin-left: 60%;
+    }
+  }
+}
 
+/* BANNER MOBILE */
+@media screen and (max-width: 600px) {
+  .banner-home {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
+    width: 100vw;
+    height: 80vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    h1 {
+      color: whitesmoke;
+      font-weight: bold;
+    }
+    .name {
+      font-weight: lighter;
+    }
+    p{
+      color: whitesmoke;
+    }
+    .text {
+      text-align: center;
+      margin-top: 25%;
+    }
+  }
+}
 
 /* EN SAVOIR PLUS */
 .savoir {
@@ -96,71 +127,5 @@
   100% {
     opacity: 0;
     transform: rotate(45deg) translate(20px, 20px);
-  }
-}
-
-.lorem {
-  margin-top: 90px;
-}
-
-
-
-
-/* DESKTOP */
-@media screen and (min-width: 601px) {
-  .banner-home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
-    width: 100vw;
-    height: 80vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      color: whitesmoke;
-      font-weight: bold;
-    }
-    .name {
-      font-weight: lighter;
-    }
-    p{
-      color: whitesmoke;
-    }
-    .text {
-      text-align: center;
-      margin-top: 15%;
-      margin-left: 60%;
-    }
-  }
-}
-
-/* MOBILE */
-@media screen and (max-width: 600px) {
-  .banner-home {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url(bateau);
-    width: 100vw;
-    height: 80vh;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    h1 {
-      color: whitesmoke;
-      font-weight: bold;
-    }
-    .name {
-      font-weight: lighter;
-    }
-    p{
-      color: whitesmoke;
-    }
-    .text {
-      text-align: center;
-      margin-top: 25%;
-    }
   }
 }

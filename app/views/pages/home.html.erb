@@ -3,37 +3,37 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <title>Nathalie Medina</title>
   </head>
-  <body data-controller="scroll-to-element"  >
-    <!-- NAVBAR DESKTOP -->
-    <nav class="navdesktop">
-      <ul>
-        <div class="home">
-          <li><%= link_to "Home" %></li>
-        </div>
-        <div class="liens">
-          <li><%= link_to "Mes services" %></li>
-          <li><%= link_to "À propos" %></li>
-          <li><%= link_to "Me contacter" %></li>
-        </div>
-      </ul>
-    </nav>
+  <body data-controller="scroll-to-element">
 
-    <!-- NAVBAR MOBILE -->
-    <nav class="navmobile">
-      <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-        <div class="bar1"></div>
-        <div class="bar2"></div>
-        <div class="bar3"></div>
-        <ul class="mobile-menu">
-          <li><a href="/mes services">Mes services</a></li>
-          <li><a href="/à porpos">À propos</a></li>
-          <li><a href="/me contacter">Me contacter</a></li>
-        </ul>
-      </div>
-    </nav>
+<!-- NAVBAR DESKTOP -->
+<nav class="navdesktop">
+  <ul>
+    <div class="home">
+      <li><a href="#home-anchor">Home</a></li>
+    </div>
+    <div class="liens">
+      <li><a href="#cards-anchor">Mes services</a></li>
+      <li><a href="#-anchor">À propos</a></li>
+      <li><a href="#-anchor">Me contacter</a></li>
+    </div>
+  </ul>
+</nav>
+
+<!-- NAVBAR MOBILE -->
+<nav class="navmobile">
+  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
+    <div class="bar1"></div>
+    <div class="bar2"></div>
+    <div class="bar3"></div>
+    <ul class="mobile-menu">
+      <li><a href="#cards-anchor">Mes services</a></li>
+      <li><a href="#">À propos</a></li>
+      <li><a href="#">Me contacter</a></li>
+    </ul>
+  </div>
+</nav>
 
     <!-- BANNER -->
     <div class="banner-home" data-action="click->scroll-to-element#scrollToElement">
