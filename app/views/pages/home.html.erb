@@ -1,3 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nathalie Medina</title>
+  </head>
+  <body data-controller="scroll-to-element">
+
 <!-- NAVBAR DESKTOP -->
 <nav class="navdesktop">
   <ul>
@@ -26,130 +35,132 @@
   </div>
 </nav>
 
-<!-- BANNER -->
-<div class="banner-home" id="home-anchor">
-  <div class="text">
-    <h1>S.A.N.M</h1>
-    <div class="name">
-      <p>SECRÉTAIRE ADMINISTRATIVE NATHALIE MEDINA</p>
-    </div>
-    <p>Spécialisée en documents
-    <br>administratifs navires et VNM</p>
-  </div>
-</div>
-
-<!-- EN SAVOIR PLUS -->
-<div class="savoir">
-  <a href="#cards-anchor">En savoir plus</a>
-</div>
-
-<!-- FLÈCHES -->
-<a class="arrow" href="#cards-anchor">
-  <span class="fleche"></span>
-  <span class="fleche"></span>
-</a>
-
-<!-- CARDS -->
-<div class="container">
-  <div class="cards">
-    <div class="cool-card" id="cards-anchor">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?sailing,ship');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Changement de propriétaire bâteau / VNM</h2>
-        <p class="cool-card-description">Tout navire de plaisance français naviguant en mer doit être enregistré auprès d’une délégation à la mer et au littoral au sein d'une direction départementale des territoires et de la mer (DDTM - DML)</p>
+    <!-- BANNER -->
+    <div class="banner-home" data-action="click->scroll-to-element#scrollToElement">
+      <div class="text">
+        <h1>S.A.N.M</h1>
+        <div class="name">
+          <p>SECRÉTAIRE ADMINISTRATIVE NATHALIE MEDINA</p>
+        </div>
+        <p>Spécialisée en documents
+        <br>administratifs navires et VNM</p>
       </div>
     </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?sailing,harbour');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Acte de vente d’un navire de plaisance ou VNM</h2>
-        <p class="cool-card-description">Mutation de propriété d’un navire de plaisance ou VNM entre un ou plusieurs copropriétaires</p>
-      </div>
+    <!-- EN SAVOIR PLUS -->
+    <div class="savoir"  data-action="click->scroll-to-element#scrollToElement">
+      <a href="#">En savoir plus</a>
     </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?sailing,yacht');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Changement de port d’attache</h2>
-        <p class="cool-card-description">Enregistrement du navire auprès de la direction départementale des territoires et de la mer (DDTM - DML)</p>
-      </div>
-    </div>
+    <!-- FLÈCHES -->
+    <a class="arrow" href="#" data-action="click->scroll-to-element#scrollToElement">
+      <span class="fleche"></span>
+      <span class="fleche"></span>
+    </a>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?zodiac,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Débarquement / Embarquement de moteur</h2>
-        <p class="cool-card-description">Tout changement de moteur sur un bâteau de plaisance ou sur un VNM implique une déclaration obligatoire effectuée auprès des administrations dans un délais d’un mois</p>
-      </div>
-    </div>
+    <!-- CARDS -->
+    <div class="container">
+      <div class="cards">
+        <div class="cool-card" data-scroll-to-element-target="scrollAnchor">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?sailing,ship');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Changement de propriétaire bâteau / VNM</h2>
+            <p class="cool-card-description">Tout navire de plaisance français naviguant en mer doit être enregistré auprès d’une délégation à la mer et au littoral au sein d'une direction départementale des territoires et de la mer (DDTM - DML)</p>
+          </div>
+        </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?big,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Succession</h2>
-        <p class="cool-card-description">Mutation de propriété du navire en cas d’héritage d’un bâteau de plaisance</p>
-      </div>
-    </div>
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?sailing,harbour');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Acte de vente d’un navire de plaisance ou VNM</h2>
+            <p class="cool-card-description">Mutation de propriété d’un navire de plaisance ou VNM entre un ou plusieurs copropriétaires</p>
+          </div>
+        </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?nice,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Dossier NUC</h2>
-        <p class="cool-card-description">Un navire de plaisance qui pratique une activité commerciale d’embarquement de passagers doit être reconnu comme navire de plaisance à utilisation commerciale (NUC)</p>
-      </div>
-    </div>
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?sailing,yacht');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Changement de port d’attache</h2>
+            <p class="cool-card-description">Enregistrement du navire auprès de la direction départementale des territoires et de la mer (DDTM - DML)</p>
+          </div>
+        </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?ocean,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Demande d’immatriculation pavillon français</h2>
-        <p class="cool-card-description">Enregistrement de votre navire de plaisance ou VNM auprès de la DDTM - DML</p>
-      </div>
-    </div>
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?zodiac,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Débarquement / Embarquement de moteur</h2>
+            <p class="cool-card-description">Tout changement de moteur sur un bâteau de plaisance ou sur un VNM implique une déclaration obligatoire effectuée auprès des administrations dans un délais d’un mois</p>
+          </div>
+        </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?sea,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Radiation</h2>
-        <p class="cool-card-description">La radiation ou sortie de flotte est la procédure qui permet au propriétaire d’un navire ou d’un VNM de le radier du registre d’immatriculation
-                                        Les raisons pouvant amener à une radiation sont : La destruction ou l’immersion du navire Le changement en eaux intérieures Sortie du territoire français</p>
-      </div>
-    </div>
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?big,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Succession</h2>
+            <p class="cool-card-description">Mutation de propriété du navire en cas d’héritage d’un bâteau de plaisance</p>
+          </div>
+        </div>
 
-    <div class="cool-card">
-      <div class="image" style="
-                  background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                  url('https://source.unsplash.com/random/?speed,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Enregistrement en eaux intérieures</h2>
-        <p class="cool-card-description">L'enregistrement de votre bateau vous donne le droit de naviguer et/ou stationner uniquement en eaux intérieures (rivières, lacs, canaux)</p>
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?nice,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Dossier NUC</h2>
+            <p class="cool-card-description">Un navire de plaisance qui pratique une activité commerciale d’embarquement de passagers doit être reconnu comme navire de plaisance à utilisation commerciale (NUC)</p>
+          </div>
+        </div>
+
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?ocean,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Demande d’immatriculation pavillon français</h2>
+            <p class="cool-card-description">Enregistrement de votre navire de plaisance ou VNM auprès de la DDTM - DML</p>
+          </div>
+        </div>
+
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?sea,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Radiation</h2>
+            <p class="cool-card-description">La radiation ou sortie de flotte est la procédure qui permet au propriétaire d’un navire ou d’un VNM de le radier du registre d’immatriculation
+                                            Les raisons pouvant amener à une radiation sont : La destruction ou l’immersion du navire Le changement en eaux intérieures Sortie du territoire français</p>
+          </div>
+        </div>
+
+        <div class="cool-card">
+          <div class="image" style="
+                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
+                      url('https://source.unsplash.com/random/?speed,boat');">
+          </div>
+          <div class="cool-card-infos">
+            <h2 class="cool-card-title">Enregistrement en eaux intérieures</h2>
+            <p class="cool-card-description">L'enregistrement de votre bateau vous donne le droit de naviguer et/ou stationner uniquement en eaux intérieures (rivières, lacs, canaux)</p>
+          </div>
+        </div>
       </div>
     </div>
-  </div>
-</div>
+  </body>
+</html>

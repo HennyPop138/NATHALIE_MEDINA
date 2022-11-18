@@ -7,6 +7,5 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
-const toggleMobileMenu = (menu) => {
-  menu.classList.toggle('open');
-};
+import ScrollToElementController from "./scroll_to_element_controller"
+application.register("scroll-to-element", ScrollToElementController)
