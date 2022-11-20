@@ -1,0 +1,36 @@
+.about {
+  display: flex;
+}
+.image-desktop {
+  background-image: url(desktop-3);
+  width: 48%;
+  height: 95%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+}
+
+.experience {
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+  padding: 40px;
+  padding-right: 90px;
+  background-color: whitesmoke;
+  text-align: left;
+  position: relative;
+  margin-top: 30vh;
+  margin-left: 45%;
+  box-sizing: content-box;
+  width: 40%;
+}
+
+.little-title {
+  font-weight: bold;
+  font-size: large;
+  line-height: 30px;
+}
+
+.little-text {
+  font-weight: lighter;
+  line-height: 30px;
+}
