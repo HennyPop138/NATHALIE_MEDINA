@@ -12,3 +12,5 @@ application.register("open-burger-menu", OpenBurgerMenuController)
 
 import ScrollToElementController from "./scroll_to_element_controller"
 application.register("scroll-to-element", ScrollToElementController)
+
+
