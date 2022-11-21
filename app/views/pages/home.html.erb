@@ -28,7 +28,7 @@
     <div class="bar2"></div>
     <div class="bar3"></div>
     <ul class="mobile-menu">
-      <li><a href="#cards-anchor">Mes services</a></li>
+      <li><a href="#">Mes services</a></li>
       <li><a href="#">À propos</a></li>
       <li><a href="#">Me contacter</a></li>
     </ul>
@@ -36,7 +36,7 @@
 </nav>
 
 <!-- BANNER -->
-<div class="banner-home" data-action="click->scroll-to-element#scrollToElement">
+<div class="banner-home">
   <div class="banner-text">
     <h1 class="banner-big-title">S.A.N.M</h1>
     <div class="banner-little-title">
@@ -48,12 +48,12 @@
 </div>
 
 <!-- EN SAVOIR PLUS -->
-<div class="savoir">
+<div class="savoir" data-action="click->scroll-to-element#scrollToElement">
   <a href="#cards-anchor">En savoir plus</a>
 </div>
 
 <!-- FLÈCHES -->
-<a class="arrow"  href="#cards-anchor">
+<a class="arrow"  href="#cards-anchor" data-action="click->scroll-to-element#scrollToElement">
   <span class="fleche"></span>
   <span class="fleche"></span>
 </a>
@@ -61,7 +61,7 @@
 <!-- CARDS -->
 <div class="container">
   <div class="cards">
-    <div class="cool-card" id="cards-anchor">
+    <div class="cool-card" data-scroll-to-element-target="scrollAnchor">
       <div class="image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),url('https://source.unsplash.com/random/?sailing,ship');">
       </div>
       <div class="cool-card-infos">
