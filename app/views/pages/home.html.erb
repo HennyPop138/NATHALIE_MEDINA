@@ -7,36 +7,36 @@
   </head>
   <body data-controller="scroll-to-element">
 
-<!-- NAVBAR DESKTOP -->
-<nav class="navdesktop">
-  <ul>
-    <div class="home">
-      <li><a href="#home-anchor">Home</a></li>
-    </div>
-    <div class="liens">
-      <li><a href="#cards-anchor">Mes services</a></li>
-      <li><a href="#-anchor">À propos</a></li>
-      <li><a href="#-anchor">Me contacter</a></li>
-    </div>
-  </ul>
-</nav>
+    <!-- NAVBAR DESKTOP -->
+    <nav class="navdesktop">
+      <ul>
+        <div class="home">
+          <li><a href="#">Home</a></li>
+        </div>
+        <div class="liens">
+          <li ><a href="#">Mes services</a></li>
+          <li><a href="#">À propos</a></li>
+          <li><a href="#">Me contacter</a></li>
+        </div>
+      </ul>
+    </nav>
 
-<!-- NAVBAR MOBILE -->
-<nav class="navmobile">
-  <div id="hamburger-icon" onclick="toggleMobileMenu(this)">
-    <div class="bar1"></div>
-    <div class="bar2"></div>
-    <div class="bar3"></div>
-    <ul class="mobile-menu">
-      <li><a href="#cards-anchor">Mes services</a></li>
-      <li><a href="#">À propos</a></li>
-      <li><a href="#">Me contacter</a></li>
-    </ul>
-  </div>
-</nav>
+    <!-- NAVBAR MOBILE -->
+    <nav class="navmobile" data-controller="open-burger-menu">
+      <div id="hamburger-icon" data-action="click->open-burger-menu#toggleMobileMenu"  data-open-burger-menu-target="burgerMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+          <ul class="mobile-menu">
+            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">Mes services</a></li>
+            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">À propos</a></li>
+            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">Me contacter</a></li>
+          </ul>
+      </div>
+    </nav>
 
     <!-- BANNER -->
-    <div class="banner-home" data-action="click->scroll-to-element#scrollToElement">
+    <div class="banner-home">
       <div class="text">
         <h1>S.A.N.M</h1>
         <div class="name">
@@ -48,12 +48,12 @@
     </div>
 
     <!-- EN SAVOIR PLUS -->
-    <div class="savoir"  data-action="click->scroll-to-element#scrollToElement">
+    <div class="savoir" data-action="click->scroll-to-element#scrollArrowsToElement">
       <a href="#">En savoir plus</a>
     </div>
 
     <!-- FLÈCHES -->
-    <a class="arrow" href="#" data-action="click->scroll-to-element#scrollToElement">
+    <a class="arrow" href="#" data-action="click->scroll-to-element#scrollArrowsToElement">
       <span class="fleche"></span>
       <span class="fleche"></span>
     </a>
