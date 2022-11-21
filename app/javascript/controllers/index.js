@@ -7,6 +7,9 @@ import { application } from "./application"
 import HelloController from "./hello_controller"
 application.register("hello", HelloController)
 
+import OpenBurgerMenuController from "./open_burger_menu_controller"
+application.register("open-burger-menu", OpenBurgerMenuController)
+
 import ScrollToElementController from "./scroll_to_element_controller"
 application.register("scroll-to-element", ScrollToElementController)
 

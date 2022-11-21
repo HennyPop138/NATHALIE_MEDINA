@@ -4,7 +4,7 @@ export default class extends Controller {
 
   static targets = [ "scrollAnchor" ]
 
-  scrollToElement(event) {
+  scrollArrowsToElement(event) {
     event.preventDefault();
     const element = this.scrollAnchorTarget;
     element.scrollIntoView({ behavior: "smooth" });
