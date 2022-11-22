@@ -22,15 +22,15 @@
     </nav>
 
     <!-- NAVBAR MOBILE -->
-    <nav class="navmobile" data-controller="open-burger-menu">
-      <div id="hamburger-icon" data-action="click->open-burger-menu#toggleMobileMenu"  data-open-burger-menu-target="burgerMenu">
+    <nav class="navmobile" data-controller="open-burger-menu"   data-open-burger-menu-target="burgerMenu">
+      <div id="hamburger-icon" data-action="click->open-burger-menu#toggleMobileMenu">
         <div class="bar1"></div>
         <div class="bar2"></div>
         <div class="bar3"></div>
           <ul class="mobile-menu">
-            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">Mes services</a></li>
-            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">À propos</a></li>
-            <li><a href="#" data-action="click->scroll-to-element#scrollArrowsToElement">Me contacter</a></li>
+            <li><a href="#" data-action="click->scroll-to-element#scrollCards">MES SERVICES</a></li>
+            <li><a href="#" data-action="click->scroll-to-element#scrollAPropos">À PROPOS</a></li>
+            <li><a href="#" data-action="click->scroll-to-element#scrollContact">CONTACT</a></li>
           </ul>
       </div>
     </nav>
@@ -48,12 +48,12 @@
     </div>
 
     <!-- EN SAVOIR PLUS -->
-    <div class="savoir" data-action="click->scroll-to-element#scrollArrowsToElement">
+    <div class="savoir" data-action="click->scroll-to-element#scrollCards">
       <a href="#">En savoir plus</a>
     </div>
 
     <!-- FLÈCHES -->
-    <a class="arrow" href="#" data-action="click->scroll-to-element#scrollArrowsToElement">
+    <a class="arrow" href="#" data-action="click->scroll-to-element#scrollCards">
       <span class="fleche"></span>
       <span class="fleche"></span>
     </a>
@@ -61,7 +61,7 @@
     <!-- CARDS -->
     <div class="container">
       <div class="cards">
-        <div class="cool-card" data-scroll-to-element-target="scrollAnchor">
+        <div class="cool-card" data-scroll-to-element-target="cardsAnchor">
           <div class="image" style="
                       background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
                       url('https://source.unsplash.com/random/?sailing,ship');">
@@ -163,19 +163,8 @@
       </div>
     </div>
 
-    <div class="cool-card">
-      <div class="image" style="background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%), url('https://source.unsplash.com/random/?speed,boat');">
-      </div>
-      <div class="cool-card-infos">
-        <h2 class="cool-card-title">Enregistrement en eaux intérieures</h2>
-        <p class="cool-card-description">L'enregistrement de votre bateau vous donne le droit de naviguer et/ou stationner uniquement en eaux intérieures (rivières, lacs, canaux)</p>
-      </div>
-    </div>
-  </div>
-</div>
-
 <!-- À PROPOS -->
-<div class="about">
+<div class="about" data-scroll-to-element-target="aProposAnchor">
   <div class="image-desktop" id="about-anchor"></div>
   <div class="experience">
     <p class="little-title">Nathalie Medina, spécialisée dans les documents anministratifs bâteaux et VNM depuis plus de 30 ans.</p>
@@ -188,7 +177,7 @@
 
 <!-- CONTACT -->
 <div class="container">
-  <div class="contact" id="contact-anchor">
+  <div class="contact" id="contact-anchor" data-scroll-to-element-target="contactAnchor">
     <h2 class="contact-big-title">S.A.N.M</h2>
     <p class="contact-little-title">SECRÉTAIRE ADMINISTRATIVE NATHALIE MEDINA</p>
     <br>
