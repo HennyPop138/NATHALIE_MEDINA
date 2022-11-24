@@ -14,9 +14,9 @@
           <li><a href="#">Home</a></li>
         </div>
         <div class="liens">
-          <li ><a href="#">Mes services</a></li>
-          <li><a href="#">À propos</a></li>
-          <li><a href="#">Me contacter</a></li>
+          <li><a href="#" data-action="click->scroll-to-element#scrollCards">Mes services</a></li>
+          <li><a href="#" data-action="click->scroll-to-element#scrollAPropos">À propos</a></li>
+          <li><a href="#" data-action="click->scroll-to-element#scrollContact">Contact</a></li>
         </div>
       </ul>
     </nav>
@@ -56,13 +56,14 @@
       <span class="fleche"></span>
     </a>
 
+
+
     <!-- CARDS -->
     <div class="container">
-      <div class="cards">
-        <div class="cool-card-dekstop cool-card-mobile" data-scroll-to-element-target="cardsAnchor">
-          <div class="image" style="
-                      background-image: linear-gradient(180deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 85%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?sailing,ship');">
+      <div class="cards" data-scroll-to-element-target="cardsAnchor">
+        <div class="cool-card-dekstop cool-card-mobile">
+          <div class="image">
+            <%= image_tag("changement-propriétaire.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Changement de propriétaire bâteau / VNM</h2>
@@ -71,9 +72,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?sailing,harbour');">
+          <div class="image">
+            <%= image_tag("acte-de-vente.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Acte de vente d’un navire de plaisance ou VNM</h2>
@@ -82,9 +82,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?sailing,yacht');">
+          <div class="image">
+            <%= image_tag("port-d'attache.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Changement de port d’attache</h2>
@@ -93,9 +92,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?zodiac,boat');">
+          <div class="image">
+            <%= image_tag("embarquement-moteur.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Débarquement / Embarquement de moteur</h2>
@@ -104,9 +102,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?big,boat');">
+          <div class="image">
+            <%= image_tag("succession.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Succession</h2>
@@ -115,9 +112,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?nice,boat');">
+          <div class="image">
+            <%= image_tag("dossier-nuc.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Dossier NUC</h2>
@@ -126,9 +122,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?ocean,boat');">
+          <div class="image">
+            <%= image_tag("pavillon-français.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Demande d’immatriculation pavillon français</h2>
@@ -137,9 +132,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?sea,boat');">
+          <div class="image">
+            <%= image_tag("radiation.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Radiation</h2>
@@ -149,9 +143,8 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
-          <div class="image" style="
-                      background-image: linear-gradient(90deg, rgba(0,0,0,0) 0%, rgba(199,196,196,0) 78%, rgba(3, 47, 64, 1) 100%),
-                      url('https://source.unsplash.com/random/?speed,boat');">
+          <div class="image">
+            <%= image_tag("eaux-interieures.jpg") %>
           </div>
           <div class="cool-card-infos">
             <h2 class="cool-card-title">Enregistrement en eaux intérieures</h2>
