@@ -14,3 +14,6 @@ import ScrollToElementController from "./scroll_to_element_controller"
 application.register("scroll-to-element", ScrollToElementController)
 
 
+AOS.init({
+  easing: 'ease-in-quad',
+});

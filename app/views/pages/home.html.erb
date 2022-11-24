@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
     <title>Nathalie Medina</title>
   </head>
   <body data-controller="scroll-to-element">
@@ -59,9 +60,10 @@
 
 
     <!-- CARDS -->
+    <h1 data-aos="slide-up">Mes services</h1>
     <div class="container">
-      <div class="cards" data-scroll-to-element-target="cardsAnchor">
-        <div class="cool-card-dekstop cool-card-mobile">
+      <div class="cards">
+        <div class="cool-card-dekstop cool-card-mobile" data-scroll-to-element-target="cardsAnchor" data-aos="fade-up">
           <div class="image">
             <%= image_tag("changement-propriétaire.jpg") %>
           </div>
@@ -71,7 +73,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("acte-de-vente.jpg") %>
           </div>
@@ -81,7 +83,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("port-d'attache.jpg") %>
           </div>
@@ -90,8 +92,8 @@
             <p class="cool-card-description">Enregistrement du navire auprès de la direction départementale des territoires et de la mer (DDTM - DML)</p>
           </div>
         </div>
-
-        <div class="cool-card-dekstop cool-card-mobile">
+        
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("embarquement-moteur.jpg") %>
           </div>
@@ -101,7 +103,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("succession.jpg") %>
           </div>
@@ -111,7 +113,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("dossier-nuc.jpg") %>
           </div>
@@ -121,7 +123,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("pavillon-français.jpg") %>
           </div>
@@ -131,7 +133,7 @@
           </div>
         </div>
 
-        <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("radiation.jpg") %>
           </div>
@@ -143,6 +145,7 @@
         </div>
 
         <div class="cool-card-dekstop cool-card-mobile">
+        <div class="cool-card-dekstop cool-card-mobile" data-aos="fade-up">
           <div class="image">
             <%= image_tag("eaux-interieures.jpg") %>
           </div>
@@ -154,30 +157,35 @@
       </div>
     </div>
 
-<!-- À PROPOS -->
-<div class="about" data-scroll-to-element-target="aProposAnchor">
-  <div class="image-desktop" id="about-anchor"></div>
-  <div class="experience">
-    <p class="little-title">Nathalie Medina, spécialisée dans les documents anministratifs bâteaux et VNM depuis plus de 30 ans.</p>
-    <br>
-    <p class="little-text">Parce que dans ce domaine nous ne savons jamais où s'adresser et auprès de qui. Est-ce la douane ? Les affaires maritimes ?
-    <br>
-    Grâce à un suivis personnalisé et des échanges réactifs par mail, je m'occupe de votre dossier de A à Z.</p>
-  </div>
-</div>
+    <!-- À PROPOS -->
+      <h1 data-aos="slide-up">À propos</h1>
+    <div class="about" data-scroll-to-element-target="aProposAnchor">
+      <div class="image-desktop" id="about-anchor" data-aos="slide-right"></div>
+      <div class="experience" data-aos="zoom-in">
+        <p class="little-title">Nathalie Medina, spécialisée dans les documents anministratifs bâteaux et VNM depuis plus de 30 ans.</p>
+        <br>
+        <p class="little-text">Parce que dans ce domaine nous ne savons jamais où s'adresser et auprès de qui. Est-ce la douane ? Les affaires maritimes ?
+        <br>
+        Grâce à un suivis personnalisé et des échanges réactifs par mail, je m'occupe de votre dossier de A à Z.</p>
+      </div>
+    </div>
 
-<!-- CONTACT -->
-<div class="container">
-  <div class="contact" id="contact-anchor" data-scroll-to-element-target="contactAnchor">
-    <h2 class="contact-big-title">S.A.N.M</h2>
-    <p class="contact-little-title">SECRÉTAIRE ADMINISTRATIVE NATHALIE MEDINA</p>
-    <br>
-    <p class="contact-text">
-    <i class="fa-solid fa-anchor"></i> &thinsp; Adresse : La Couronne, 13500 Martigues, France
-    <br>
-    <i class="fa-solid fa-phone"></i> &thinsp; Téléphone : 06 27 50 61 78
-    <br>
-    <i class="fa-solid fa-envelope"></i> &thinsp; e-mail : 13sanm@gmail.com
-    </p>
-  </div>
-</div>
+    <!-- CONTACT -->
+    <h1 data-aos="slide-up">Me contacter</h1>
+    <div class="container">
+      <div class="contact" id="contact-anchor" data-scroll-to-element-target="contactAnchor" data-aos="flip-down">
+        <h2 class="contact-big-title">S.A.N.M</h2>
+        <p class="contact-little-title">SECRÉTAIRE ADMINISTRATIVE NATHALIE MEDINA</p>
+        <br>
+        <p class="contact-text">
+        <i class="fa-solid fa-anchor"></i> &thinsp; Adresse : La Couronne, 13500 Martigues, France
+        <br>
+        <i class="fa-solid fa-phone"></i> &thinsp; Téléphone : 06 27 50 61 78
+        <br>
+        <i class="fa-solid fa-envelope"></i> &thinsp; e-mail : 13sanm@gmail.com
+        </p>
+      </div>
+    </div>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+  </body>
+</html>
