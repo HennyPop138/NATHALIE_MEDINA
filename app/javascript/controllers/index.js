@@ -15,5 +15,6 @@ application.register("scroll-to-element", ScrollToElementController)
 
 
 AOS.init({
-  easing: 'ease-in-quad',
+  easing: 'linear',
+  delay: 200,
 });
