@@ -13,7 +13,7 @@ Rails.application.configure do
   config.eager_load = true
 
   # Force SSL
-  config.force_ssl = true
+  # config.force_ssl = true
 
   # Full error reports are disabled and caching is turned on.
   config.consider_all_requests_local       = false
